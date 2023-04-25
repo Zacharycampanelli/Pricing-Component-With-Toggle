@@ -16,9 +16,12 @@
     --gradientEnd: 237, 63%, 64%;  
   }
 
-  html {
+  body {
     font-family: 'Montserrat', sans-serif;
   }
+}
+.hide {
+  display: none;
 }
 
 .attribution {
