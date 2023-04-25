@@ -1,9 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
 
+@import 'tailwindcss/components';
 
+@import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@layer base {
+  :root {
+    --veryLightGrayishBlue: 240, 78%, 98%;
+    --lightGrayishBlue: 234, 14%, 74%;
+    --grayishBlue: 233, 13%, 49%;
+    --darkGrayishBlue: 232, 13%, 33%;
+    --gradientStart: 236, 72%, 79%;
+    --gradientEnd: 237, 63%, 64%;  
+  }
+
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
