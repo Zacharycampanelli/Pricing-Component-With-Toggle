@@ -19,7 +19,7 @@
         <span class="text-lightGrayishBlue ">Annually</span>
         <span class="relative mx-auto">
           <input x-model="annual" id="plan_type" type="checkbox" class="hidden peer" />
-          <div class="w-10 h-6 rounded-full shadow-inner bg-gradient-to-r from-[#A3A8F0] to-[#696fdd]"></div>
+          <div class="w-10 h-6 rounded-full shadow-inner bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] md:hover:opacity-50"></div>
           <div
             class="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto bg-white"
           ></div>
@@ -32,7 +32,7 @@
     
     <main class="flex flex-col md:flex-row justify-center items-center text-center md:w-5/6 md:mx-auto">
 
-      <section id="basic" class="px-0 py-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg md:drop-shadow-none md:w-1/2 ">
+      <section id="basic" class="px-0 py-8 mb-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg rounded-lg md:drop-shadow-none md:w-1/2 ">
         <h2 class="text-h2">Basic</h2>
         <span x-text="annual ? '19.99' : '199.99' " class="before:text-dollar before:align-bottom before:content-['$'] align-text-bottom text-darkGrayishBlue text-pricing"></span>
         <ul class="mt-8 mb-3 pb-4">
@@ -44,10 +44,10 @@
           <li class="my-4">Send up to 3 GB</li>
           <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
         </ul>
-        <button class="w-10/12 h-11 text-button text-white tracking-[.08em] bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] rounded-lg">LEARN MORE</button>
+        <button class="w-10/12 h-11 text-button text-white tracking-[.08em] bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] rounded-lg md:hover:from-white md:hover:to-white md:hover:text-gradientEnd md:hover:border-2 md:hover:border-gradientEnd  md:hover:cursor-pointer">LEARN MORE</button>
       </section>
 
-      <section id="professional"class="px-0 py-8 text-white bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] w-11/12 rounded-lg md:w-6/12 md:py-12">
+      <section id="professional"class="px-0 py-8 mb-8 text-white bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] w-11/12 rounded-lg md:w-6/12 md:py-12">
         <h2 class="text-h2">Professional</h2>
         <span x-text="annual ? '24.99' : '249.99' " class="before:text-dollar before:align-bottom before:content-['$'] align-text-bottom text-white text-pricing"></span>
         <ul class="mt-8 mb-3 pb-4">
@@ -59,10 +59,10 @@
           <li class="my-4">Send up to 10 GB</li>
           <hr class="h-px border-t-0 bg-white opacity-25 md:mx-8" />
         </ul>
-        <button class="w-10/12 h-11 text-button text-gradientEnd tracking-[.08em]m bg-white rounded-lg">LEARN MORE</button>
+        <button class="w-10/12 h-11 text-button text-gradientEnd tracking-[.08em]m bg-white rounded-lg md:hover:bg-transparent md:hover:text-white md:hover:border-2 md:hover:border-white md:hover:cursor-pointer">LEARN MORE</button>
       </section>
       
-      <section id="master" class="px-0 py-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg md:drop-shadow-none  md:w-1/2 ">
+      <section id="master" class="px-0 py-8 mb-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg rounded-lg md:drop-shadow-none  md:w-1/2 ">
         <h2 class="text-h2">Master</h2>
         <span x-text="annual ? '39.99' : '399.99' " class="before:text-dollar before:align-bottom before:content-['$'] align-text-bottom text-darkGrayishBlue text-pricing"></span>
         <ul class="mt-8 mb-3 pb-4">
@@ -74,7 +74,7 @@
           <li class="my-4">Send up to 20 GB</li>
           <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
         </ul>
-        <button class="w-10/12 h-11 text-button text-white tracking-[.08em] bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] rounded-lg">LEARN MORE</button>
+        <button class="w-10/12 h-11 text-button text-white tracking-[.08em] bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] rounded-lg md:hover:from-white md:hover:to-white md:hover:text-gradientEnd md:hover:border-2 md:hover:border-gradientEnd  md:hover:cursor-pointer">LEARN MORE</button>
       </section>
     </main>
 

@@ -623,6 +623,10 @@ body {
   margin-top: 2rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .flex{
   display: flex;
 }
@@ -865,6 +869,11 @@ body {
   content: var(--tw-content);
 }
 
+.hover\:bg-white:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .peer:checked ~ .peer-checked\:left-auto{
   left: auto;
 }
@@ -1010,6 +1019,64 @@ body {
       --tw-drop-shadow: drop-shadow(0 0 #0000);
       filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
     }
+  }
+
+  .md\:hover\:cursor-pointer:hover{
+    cursor: pointer;
+  }
+
+  .md\:hover\:border:hover{
+    border-width: 1px;
+  }
+
+  .md\:hover\:border-2:hover{
+    border-width: 2px;
+  }
+
+  .md\:hover\:border-gradientEnd:hover{
+    --tw-border-opacity: 1;
+    border-color: hsl(var(--gradientEnd), var(--tw-border-opacity));
+  }
+
+  .md\:hover\:border-white:hover{
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+
+  .md\:hover\:bg-white:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:bg-transparent:hover{
+    background-color: transparent;
+  }
+
+  .md\:hover\:from-white:hover{
+    --tw-gradient-from: #fff var(--tw-gradient-from-position);
+    --tw-gradient-from-position:  ;
+    --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-from-position);
+    --tw-gradient-to-position:  ;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .md\:hover\:to-white:hover{
+    --tw-gradient-to: #fff var(--tw-gradient-to-position);
+    --tw-gradient-to-position:  ;
+  }
+
+  .md\:hover\:text-gradientEnd:hover{
+    --tw-text-opacity: 1;
+    color: hsl(var(--gradientEnd), var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-white:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .md\:hover\:opacity-50:hover{
+    opacity: 0.5;
   }
 }
 
