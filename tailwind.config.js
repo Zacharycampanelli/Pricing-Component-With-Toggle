@@ -18,6 +18,7 @@ module.exports = {
         darkGrayishBlue: 'hsl(var(--darkGrayishBlue), <alpha-value>)',
         gradientStart: 'hsl(var(--gradientStart), <alpha-value>)',
         gradientEnd: 'hsl(var(--gradientEnd), <alpha-value>)',
+        backgroundWhite: 'hsl(var(--backgroundWhite), <alpha-value>)',
       },
     },
   },

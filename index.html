@@ -9,14 +9,14 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Frontend Mentor | Pricing Component with Toggle</title>
   </head>
-  <body x-data="{annual: false}" class="text-[15px] m-6 overflow-x-hidden w-11/12">
-    <div class="wrapper relative overflow-x-hidden relative">
-      <svg xmlns="http://www.w3.org/2000/svg" class="absolute -right-52 -top-12 -z-10" width="375" height="658"><g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2"><path d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"/><path d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"/><path d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"/></g></svg>
+  <body x-data="{annual: false}" class="text-[15px] m-6 overflow-x-hidden w-11/12 md:w-full md:m-0 bg-backgroundWhite md:h-screen">
+    <div class="wrapper overflow-x-hidden relative  md:h-screen">
+      <svg xmlns="http://www.w3.org/2000/svg" class="absolute -right-52 -top-12 -z-10 md:-right-4 md:-top-0" width="375" height="658"><g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2"><path d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"/><path d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"/><path d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"/></g></svg>
 
     <header class="flex flex-col items-center overflow-x-hidden mt-14 mb-10 pb-10">
       <h1 class="text-center text-grayishBlue text-h1 ">Our Pricing</h1>
-      <label for="plan_type" class="inline-flex items-center space-x-4 cursor-pointer mt-10 dark:text-gray-100">
-        <span class="text-lightGrayishBlue">Annually</span>
+      <label for="plan_type" class="inline-flex items-center space-x-12 cursor-pointer mt-10 dark:text-gray-100">
+        <span class="text-lightGrayishBlue ">Annually</span>
         <span class="relative mx-auto">
           <input x-model="annual" id="plan_type" type="checkbox" class="hidden peer" />
           <div class="w-10 h-6 rounded-full shadow-inner bg-gradient-to-r from-[#A3A8F0] to-[#696fdd]"></div>
@@ -24,56 +24,55 @@
             class="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto bg-white"
           ></div>
         </span>
-        <span class="text-lightGrayishBlue">Monthly</span>
+        <span class="text-lightGrayishBlue ">Monthly</span>
       </label>
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="absolute -right-56 -top-20 -z-10" width="375" height="658"><g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2"><path d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"/><path d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"/><path d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"/></g></svg> -->
     </header>
 
 
     
-    <main class="flex flex-col justify-center items-center text-center">
+    <main class="flex flex-col md:flex-row justify-center items-center text-center md:w-5/6 md:mx-auto">
 
-      <section id="basic" class="px-0 py-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg">
+      <section id="basic" class="px-0 py-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg md:drop-shadow-none md:w-1/2 ">
         <h2 class="text-h2">Basic</h2>
         <span x-text="annual ? '19.99' : '199.99' " class="before:text-dollar before:align-bottom before:content-['$'] align-text-bottom text-darkGrayishBlue text-pricing"></span>
         <ul class="mt-8 mb-3 pb-4">
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
           <li class="my-4">500 GB Storage</li>
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
           <li class="my-4">2 Users Allowed</li>
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
           <li class="my-4">Send up to 3 GB</li>
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
         </ul>
         <button class="w-10/12 h-11 text-button text-white tracking-[.08em] bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] rounded-lg">LEARN MORE</button>
       </section>
 
-      <section id="professional"class="px-0 py-8 text-white bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] w-11/12 rounded-lg">
+      <section id="professional"class="px-0 py-8 text-white bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] w-11/12 rounded-lg md:w-6/12 md:py-12">
         <h2 class="text-h2">Professional</h2>
         <span x-text="annual ? '24.99' : '249.99' " class="before:text-dollar before:align-bottom before:content-['$'] align-text-bottom text-white text-pricing"></span>
         <ul class="mt-8 mb-3 pb-4">
-          <hr class="h-px border-t-0 bg-white opacity-25" />
+          <hr class="h-px border-t-0 bg-white opacity-25 md:mx-8" />
           <li class="my-4">1 TB Storage</li>
-          <hr class="h-px border-t-0 bg-white opacity-25" />
+          <hr class="h-px border-t-0 bg-white opacity-25 md:mx-8" />
           <li class="my-4">5 Users Allowed</li>
-          <hr class="h-px border-t-0 bg-white opacity-25" />
+          <hr class="h-px border-t-0 bg-white opacity-25 md:mx-8" />
           <li class="my-4">Send up to 10 GB</li>
-          <hr class="h-px border-t-0 bg-white opacity-25" />
+          <hr class="h-px border-t-0 bg-white opacity-25 md:mx-8" />
         </ul>
         <button class="w-10/12 h-11 text-button text-gradientEnd tracking-[.08em]m bg-white rounded-lg">LEARN MORE</button>
       </section>
       
-      <section id="master" class="px-0 py-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg">
+      <section id="master" class="px-0 py-8 text-grayishBlue bg-white w-11/12 drop-shadow-lg md:drop-shadow-none  md:w-1/2 ">
         <h2 class="text-h2">Master</h2>
         <span x-text="annual ? '39.99' : '399.99' " class="before:text-dollar before:align-bottom before:content-['$'] align-text-bottom text-darkGrayishBlue text-pricing"></span>
         <ul class="mt-8 mb-3 pb-4">
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
           <li class="my-4">2 TB Storage</li>
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
           <li class="my-4">10 Users Allowed</li>
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
           <li class="my-4">Send up to 20 GB</li>
-          <hr class="h-px border-t-0 bg-grayishBlue opacity-25" />
+          <hr class="h-px border-t-0 bg-grayishBlue opacity-25 md:mx-8" />
         </ul>
         <button class="w-10/12 h-11 text-button text-white tracking-[.08em] bg-gradient-to-r from-[#A3A8F0] to-[#696fdd] rounded-lg">LEARN MORE</button>
       </section>
@@ -83,6 +82,8 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="#">Zachary Campanelli</a>.
     </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block absolute bottom-0 -z-10" width="353" height="304"><g fill="none" fill-rule="evenodd" stroke="#D0D5F6" stroke-width="2"><path d="M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126"/><path d="M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859"/><path d="M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892"/></g></svg>
   </div>
   </body>
 </html>
